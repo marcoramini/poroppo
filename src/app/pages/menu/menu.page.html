@@ -1,0 +1,46 @@
+<ion-app>
+  <ion-menu contentId="main-content" side="start">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>{{title}}</ion-title>
+    
+        <!-- Side menu button -->
+        <ion-buttons slot="start" *ngIf="!showBackButton()">
+          <ion-menu-button autoHide="false"></ion-menu-button>
+        </ion-buttons>
+        <ion-buttons slot="start" (click)="goBack()"  *ngIf="showBackButton()">
+          <ion-icon name="arrow-back-outline" size="large"></ion-icon>
+        </ion-buttons>
+    
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle auto-hide="false" *ngFor="let page of pages">
+          <ion-item (click)="goTo('home')" *ngIf="!showBackButton()" detail="false">
+            Home
+          </ion-item>
+        </ion-menu-toggle>
+      <app-category-list [hidden]="!showCategoriesButton"
+        #catList 
+        mode="clear" 
+        [cat]="selectedCat" 
+        (catChanged)="onCatSelect($event)"
+        (endSubs)="onEndSubs($event)"></app-category-list>
+        <app-setting-list [hidden]="!showSettingsButton"
+          #settingList
+          (expand)="onSettingClick($event)"
+          (redirect)="onRedirect($event)"></app-setting-list>
+        <ion-menu-toggle auto-hide="false" *ngFor="let page of pages">
+          <ion-item (click)="goTo(page.path)" *ngIf="!showBackButton()" detail="false">
+            {{page.name}}
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-router-outlet id="main-content" main></ion-router-outlet>
+
+</ion-app>

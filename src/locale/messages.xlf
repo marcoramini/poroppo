@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="welcomeTitle" datatype="html">
+        <source>Welcome</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/tutorial/tutorial.page.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description"> Welcome Title</note>
+        <note priority="1" from="meaning">Tutorial Page </note>
+      </trans-unit>
+      <trans-unit id="welcomeText" datatype="html">
+        <source>
+        Poroppo helps Merchants and Custumers keep in touch. Find the best prodocts 
+        nearby shops can offers.
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/tutorial/tutorial.page.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description"> Welcome Text</note>
+        <note priority="1" from="meaning">Tutorial Page </note>
+      </trans-unit>
+      <trans-unit id="keyFeaturesTitle" datatype="html">
+        <source>
+        Send your product request
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/tutorial/tutorial.page.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <note priority="1" from="description"> Key Features Title</note>
+        <note priority="1" from="meaning">Tutorial Page </note>
+      </trans-unit>
+      <trans-unit id="keyFeaturesText" datatype="html">
+        <source>
+        Ask for products and choose the best matching. Contact the store you choose and 
+        make arrangements for pick and pay, delivery or shipment. 
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/tutorial/tutorial.page.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <note priority="1" from="description"> Key Features Text</note>
+        <note priority="1" from="meaning">Tutorial Page </note>
+      </trans-unit>
+      <trans-unit id="startNowTitle" datatype="html">
+        <source>Start Now</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/tutorial/tutorial.page.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <note priority="1" from="description"> Start now Title</note>
+        <note priority="1" from="meaning">Tutorial Page </note>
+      </trans-unit>
+      <trans-unit id="startNowText" datatype="html">
+        <source>
+        Create a Poroppo account to take advantage of all amzing service. If you are a Merchant 
+        just register to Poroppo to insert your stor today.
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/tutorial/tutorial.page.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <note priority="1" from="description"> Start now Text</note>
+        <note priority="1" from="meaning">Tutorial Page </note>
+      </trans-unit>
+      <trans-unit id="loginButtonText" datatype="html">
+        <source>
+        Login to Poroppo
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/tutorial/tutorial.page.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <note priority="1" from="description"> Login Button</note>
+        <note priority="1" from="meaning">Tutorial Page </note>
+      </trans-unit>
+      <trans-unit id="exploreButtonText" datatype="html">
+        <source>
+        Explore Poroppo
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/tutorial/tutorial.page.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <note priority="1" from="description"> Explore Button</note>
+        <note priority="1" from="meaning">Tutorial Page </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

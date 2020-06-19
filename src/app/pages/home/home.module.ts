@@ -6,13 +6,18 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 
+import { MapComponentModule } from '../../components/map/map.component.module';
+import { CategoryListModule } from '../../components/category-list/category-list.component.module';
+
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    MapComponentModule,
+    CategoryListModule
   ],
   declarations: [HomePage]
 })

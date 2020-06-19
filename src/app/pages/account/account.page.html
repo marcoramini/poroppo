@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Account</ion-title>
+
+    <!-- Side menu button -->
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end"   *ngIf="showSegment">
+      <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked">Nome</ion-label>
+    <ion-input [value]="user.name" placeholder="Il tuo nome"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Indirizzo di consegna</ion-label>
+    <ion-input [value]="user.geolocal" placeholder="Indirizzo"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Modalità negoziante</ion-label>
+    <ion-toggle [checked]="user.hasStores()"></ion-toggle>
+  </ion-item>
+</ion-content>

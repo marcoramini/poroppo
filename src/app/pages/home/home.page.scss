@@ -1,3 +1,4 @@
+  /*
 #container {
   text-align: center;
 
@@ -7,10 +8,27 @@
   top: 50%;
   transform: translateY(-50%);
 }
+*/
 
 #container strong {
   font-size: 20px;
   line-height: 26px;
+}
+ion-footer{
+  background-color: #ddd;
+}
+.footer-text-area{
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid #8c8c8c;
+}
+/*
+ion-textarea{
+  width:180px;
+}
+*/
+.attachButton{
+  margin:0px;
 }
 
 #container p {

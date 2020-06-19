@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{title}}</ion-title>
+
+    <!-- Side menu button -->
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-segment (ionChange)="segmentChanged($event)" *ngIf="showSegment" value="ask">
+    <ion-segment-button value="ask">
+      <ion-label>Chiedi</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="special">
+      <ion-label>Offerte</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="stores">
+      <ion-label>Negozi</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div id="container">
+    <app-map *ngIf="showMap"
+      #map
+      (geoLocalized)="onGeoLocalized($event)"></app-map>
+
+  </div>
+
+  <!--app-category-list [cat]="selectedCat" (catChanged)="onCatSelect($event)"></app-category-list-->
+</ion-content>
+<ion-footer *ngIf="showMessageBox">
+<ion-row>
+  <ion-col size="10">
+    <ion-item class="footer-text-area">
+      <ion-textarea 
+        placeholder="Cosa ti serve oggi?" 
+        #message
+        auto-grow="true"
+        rows="1"></ion-textarea>
+      <ion-button slot="end" fill="clear" class="attachButton">
+        <ion-icon slot="icon-only" name="attach-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-col>
+  <ion-col size="2" class="ion-align-self-start">
+    <ion-button fill="clear" shape="round" color="success" (click)="sendMessage(message.value)">
+      <ion-icon slot="start" name="send-outline"></ion-icon>
+    </ion-button>
+  </ion-col>
+</ion-row>
+</ion-footer>

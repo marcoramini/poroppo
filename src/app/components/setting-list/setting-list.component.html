@@ -1,0 +1,6 @@
+<ng-template ngFor let-page [ngForOf]="pageList">
+  <ion-item button (click)="getChilds($event,page)"
+    [detail]="page == rootPage">
+    {{page.name}}
+  </ion-item>
+</ng-template>

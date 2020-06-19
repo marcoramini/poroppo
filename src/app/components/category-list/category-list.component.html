@@ -1,0 +1,9 @@
+  <ng-template ngFor let-category [ngForOf]="categoryList">
+    <ion-item button 
+      (click)="getSubCategories($event, category)" 
+      [detail]="hasDetails(category)">
+      <ion-label>
+        {{category.name}}
+      </ion-label>
+    </ion-item>
+  </ng-template>

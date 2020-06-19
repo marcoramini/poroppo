@@ -1,0 +1,116 @@
+[
+    
+    {
+        "name":"Abbigliamento e Accessori",
+        "childs":[
+            {"name":"Abbigliamento Uomo"},
+            {"name":"Abbigliamento Donna"}, 
+            {"name":"Abbigliamento Bambino"}, 
+            {"name":"Scarpe"}, 
+            {"name":"Scarpe Bambino"}, 
+            {"name":"Borse"},
+            {"name":"Accessori Moda"}
+        ]
+    },
+    {
+        "name":"Alimentari",
+        "childs":[
+            {"name":"Salumi"}, 
+            {"name":"Pane"}, 
+            {"name":"Frutta e Verdura"}, 
+            {"name":"Macelleria"}, 
+            {"name":"Latticini e Formaggi"},
+            {"name":"Pasta Fresca"}, 
+            {"name":"Vini e Liquori"}
+        ]
+    },
+    {
+        "name":"Elettronica",
+        "childs":[
+            {"name":"Elettrodomestici"},
+            {"name":"Elettronica"},
+            {"name":"Informatica"},
+            {"name":"Strumenti Musicali e DJ"},
+            {"name":"Dischi"}
+        ]
+    },
+    {
+        "name":"Altro",
+        "childs":[
+            {"name":"Cartoleria"},
+            {"name":"Tabacchi"},
+            {"name":"Libri"},
+            {"name":"Giornali"},
+            {"name":"Consumabili per Ufficio"},
+            {"name":"Hobbistica e Fai da te"},
+            {"name":"Arte"}
+        ]
+    },
+    {
+        "name":"Salute e Belezza",
+        "childs":[
+            {"name":"Farmacie"}, 
+            {"name":"Parafarmacie"}, 
+            {"name":"Erboristerie"}, 
+            {"name":"Profumerie"}
+        ]
+    },
+    {
+        "name":"Giochi e Giocattoli",
+        "childs":[
+            {"name":"Giochi"}, 
+            {"name":"Gioccattoli"}, 
+            {"name":"Videogiochi"}
+        ]
+    },
+    {
+        "name":"Infanzia",
+        "childs":[
+            {"name":"Giochi"}, 
+            {"name":"Gioccattoli"}, 
+            {"name":"Videogiochi"}, 
+            {"name":"Prodotti per l'Infanzia"}
+        ]
+    },
+    {
+        "name":"Fai da te",
+        "childs":[
+            {"name":"Ferramenta"},
+            {"name":"Vernici e Parati"},
+            {"name":"Materiale da costruzione"},
+            {"name":"Articoli per Giardinaggio"},
+            {"name":"Materiale elettrico"},
+            {"name":"Illuminazione"}
+        ]
+    },
+    {
+        "name":"Motori",
+        "childs":[
+            {"name":"Ricambi e Accessori Auto e Moto"}
+        ]
+    },
+    {
+        "name":"Sport",
+        "childs":[
+            {"name":"Articoli Sportivi"}, 
+            {"name":"Biciclette"}, 
+            {"name":"Caccia e Pesca"}
+        ]
+    },
+    {
+        "name":"Casa e Giardino",
+        "childs":[
+            {"name":"Articoli per la casa"},
+            {"name":"Articoli per il Giardino"},
+            {"name":"Fiori e Piante"}
+        ]
+    },
+    {
+        "name":"Gioielli",
+        "childs":[
+            {"name":"Gioielleria"},
+            {"name":"Bigiotteria"},
+            {"name":"Orologi"}
+        ]
+    }
+]

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "poroppo": {
+      "hosting": {
+        "app": [
+          "poroppo"
+        ]
+      }
+    }
+  }
+}
